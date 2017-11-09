@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BACKUP_PATH=$PATH
-PATH=$PATH:"$(pwd)/x_scripts"
+PATH=$PATH:"$(pwd)/sprykerhelperscripts"
 source devenv.sh
 PATH=$BACKUP_PATH
 
