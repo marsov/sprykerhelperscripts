@@ -5,7 +5,7 @@ PATH=$PATH:"$(pwd)/sprykerhelperscripts"
 source devenv.sh
 PATH=$BACKUP_PATH
 
-CMD="cd $VM_PROJECT_ROOT && vendor/bin/phpcbf --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml "
+CMD="cd $VM_PROJECT_ROOT && vendor/bin/phpmd "
 
 if [ -n "$1" ]
 then
@@ -13,6 +13,8 @@ then
 else
     CMD+=" ./src"
 fi
+
+CMD+=" text cleancode,codesize,design,naming,unusedcode,controversial"
 
 ECHO $CMD
 
