@@ -1,2 +1,9 @@
-# sprykerhelperscripts
-Set of helper scripts that make debugging of tests in Spryker VM setup easy.
+# Helper Scripts - Make my life easier
+
+Set of helper scripts.
+
+
+# Shell
+
+    echo "$SHELL"
+
